@@ -11,8 +11,7 @@
     "react-dom": "latest"
   },
   "scripts": {
-    "build": "next build",
-    "export": "npm run build && next export",
+    "build": "next build && next export",
     "start": "next"
   },
   "devDependencies": {
