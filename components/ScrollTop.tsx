@@ -21,7 +21,11 @@ function handleClick() {
   const first: (Element|null) = document.body.firstElementChild
 
   if (first) {
-    first.scrollIntoView({ behavior: 'smooth' });
+    first.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start'
+    });
   }
 };
 
