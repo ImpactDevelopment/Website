@@ -3,6 +3,8 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import theme from '../src/theme';
 
+// _document is only rendered on the server side and not on the client side
+// Event handlers like onClick can't be added to this file
 export default class MyDocument extends Document {
   render() {
     return (
