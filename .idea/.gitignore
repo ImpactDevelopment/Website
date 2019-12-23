@@ -1,0 +1,8 @@
+# Default ignored files
+/workspace.xml
+
+# Ignore everything by default
+/*
+
+!/.gitignore
+!/vcs.xml
