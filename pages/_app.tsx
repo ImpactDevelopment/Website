@@ -3,7 +3,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import App from 'next/app';
 import Head from 'next/head';
 import React from 'react';
-import theme from '../src/theme';
+import theme from '../components/theme';
 
 // `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
 // This allows for keeping state between navigation, custom error handling, injecting additional data.

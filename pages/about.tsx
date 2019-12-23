@@ -2,9 +2,9 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import MuiLink from '@material-ui/core/Link';
-import ProTip from '../src/ProTip';
-import Staff from '../src/Staff';
-import Layout from '../src/Layout';
+import ProTip from '../components/ProTip';
+import Staff from '../components/Staff';
+import Layout from '../components/Layout';
 
 export default function About() {
   return (
