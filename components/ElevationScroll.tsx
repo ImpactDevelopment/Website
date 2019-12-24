@@ -1,18 +1,18 @@
-import { useScrollTrigger } from "@material-ui/core";
-import React from "react";
+import { useScrollTrigger } from '@material-ui/core'
+import React from 'react'
 
 interface Props {
-    children: React.ReactElement;
+	children: React.ReactElement
 }
 
-export default function ElevationScroll(props: Props) {
-    const { children } = props;
-    const trigger = useScrollTrigger({
-      disableHysteresis: true,
-      threshold: 0
-    });
-  
-    return React.cloneElement(children, {
-      elevation: trigger ? 4 : 0,
-    });
-  }
+export default function ElevationScroll(props: Props): JSX.Element {
+	const { children } = props
+	const trigger = useScrollTrigger({
+		disableHysteresis: true,
+		threshold: 0,
+	})
+
+	return React.cloneElement(children, {
+		elevation: trigger ? 4 : 0,
+	})
+}
