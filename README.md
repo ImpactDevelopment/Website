@@ -19,9 +19,9 @@ This will first install all dependancies, then run a development server complete
 
 You'll want to install the following plugins in your workspace:
 
--   [`esbenp.prettier-vscode`](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
--   [`dbaeumer.vscode-eslint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
--   [`editorconfig.editorconfig`](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig)
+-   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+-   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+-   [EditorConfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig)
 
 ```sh
 # Bash one-liner
@@ -32,8 +32,8 @@ Alternatively use the built in **Extensions: Show Recommended Extensions** featu
 
 [![VSCode workspace-recommended-extensions documentation](https://code.visualstudio.com/assets/docs/editor/extension-gallery/recommendations.png)](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
 
-## Intellij IDEA
+## Intellij IDEA and WebStorm
 
--   [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier)
--   [ESLint](https://plugins.jetbrains.com/plugin/7494-eslint)
--   [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig) (default since 2019.2)
+-   [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier) (default on WebStorm)
+-   [ESLint](https://plugins.jetbrains.com/plugin/7494-eslint) (must be installed manually)
+-   [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig) (default on Intellij & WebStorm)
