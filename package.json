@@ -1,34 +1,47 @@
 {
-  "name": "impact-website",
-  "version": "2.0.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "latest",
-    "@material-ui/icons": "^4.5.1",
-    "clsx": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
-  },
-  "scripts": {
-    "build": "next build && next export",
-    "start": "next",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
-  },
-  "devDependencies": {
-    "@types/next": "latest",
-    "@types/node": "latest",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "latest",
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
-    "prettier": "1.19.1",
-    "typescript": "latest"
-  }
+	"name": "impact-website",
+	"version": "2.0.0",
+	"private": true,
+	"scripts": {
+		"build": "next build && next export",
+		"start": "next",
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint --fix",
+			"git add"
+		]
+	},
+	"dependencies": {
+		"@material-ui/core": "latest",
+		"@material-ui/icons": "^4.5.1",
+		"clsx": "latest",
+		"next": "latest",
+		"react": "latest",
+		"react-dom": "latest"
+	},
+	"devDependencies": {
+		"@types/next": "latest",
+		"@types/node": "latest",
+		"@types/react": "^16.9.17",
+		"@types/react-dom": "latest",
+		"@typescript-eslint/eslint-plugin": "^2.13.0",
+		"@typescript-eslint/parser": "^2.13.0",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-config-react": "^1.1.7",
+		"eslint-plugin-import": "^2.19.1",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-react": "^7.17.0",
+		"husky": "^3.1.0",
+		"lint-staged": "beta",
+		"prettier": "1.19.1",
+		"typescript": "latest"
+	}
 }
