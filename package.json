@@ -5,7 +5,9 @@
 	"scripts": {
 		"build": "next build && next export",
 		"start": "next",
-		"lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+		"pretest": "npm run lint",
+		"test": "echo \"No tests\""
 	},
 	"husky": {
 		"hooks": {
@@ -13,10 +15,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": [
-			"eslint --fix",
-			"git add"
-		]
+		"*.{js,jsx,ts,tsx}": "eslint --fix"
 	},
 	"dependencies": {
 		"@material-ui/core": "latest",
