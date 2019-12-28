@@ -1,18 +1,15 @@
-import red from '@material-ui/core/colors/red'
-import { createMuiTheme } from '@material-ui/core/styles'
+import { createMuiTheme, Theme, PaletteType } from '@material-ui/core'
+import { red, blue, deepPurple } from '@material-ui/core/colors'
 
-// Export a theme instance.
-export default createMuiTheme({
-	palette: {
-		primary: {
-			main: '#2196F3',
+export default function makeTheme(type: PaletteType): Theme {
+	return createMuiTheme({
+		palette: {
+			primary: blue,
+			secondary: deepPurple,
+			type,
+			error: {
+				main: red.A400,
+			},
 		},
-		secondary: {
-			main: '#039be5',
-		},
-		type: 'dark',
-		error: {
-			main: red.A400,
-		},
-	},
-})
+	})
+}

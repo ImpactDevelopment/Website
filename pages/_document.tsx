@@ -3,7 +3,6 @@ import Document, { Head, Main, NextScript, DocumentInitialProps, DocumentContext
 import { ServerStyleSheets } from '@material-ui/core/styles'
 import { RenderPageResult } from 'next/dist/next-server/lib/utils'
 
-import theme from '../components/theme'
 import Polyfill from '../components/Polyfill'
 
 // _document is only rendered on the server side and not on the client side
@@ -15,8 +14,6 @@ export default class MyDocument extends Document {
 				<Head>
 					<meta charSet="utf-8" />
 					<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
-					{/* PWA primary color */}
-					<meta name="theme-color" content={theme.palette.primary.main} />
 					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 					<Polyfill features={['fetch', 'smoothscroll']} />
 				</Head>
