@@ -10,11 +10,9 @@ export default createMuiTheme({
 		secondary: {
 			main: '#039be5',
 		},
+		type: 'dark',
 		error: {
 			main: red.A400,
-		},
-		background: {
-			default: '#fff',
 		},
 	},
 })
