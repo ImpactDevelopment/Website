@@ -1,4 +1,5 @@
-import { AppBar, Fab, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Fab, Toolbar, Typography, ButtonBase } from '@material-ui/core'
+import Link from 'next/link'
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
 import Head from 'next/head'
 import React from 'react'
@@ -20,10 +21,12 @@ export default function Layout({ children, title = 'Impact' }: Props): JSX.Eleme
 			</Head>
 			<ElevationScroll>
 				<AppBar position="sticky">
-					<Toolbar variant="dense">
-						<Typography variant="h4" component="h1" gutterBottom>
-							{title}
-						</Typography>
+					<Toolbar>
+						<ButtonBase>
+							<Link href="/">
+								<Typography variant="h5">{title}</Typography>
+							</Link>
+						</ButtonBase>
 					</Toolbar>
 				</AppBar>
 			</ElevationScroll>
