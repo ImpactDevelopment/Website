@@ -32,7 +32,7 @@ You can install these by running `apm i linter linter-eslint editorconfig`
 You can use Intellij's Required Plugins feature:
 [![Intellij Required Plugins](.idea/required-plugins.png)](https://www.jetbrains.com/help/idea/managing-plugins.html#required-plugins)
 
-You can use the included Run Configurations to build the static site or run the development server.
+You can use the included Run Configurations to run in debugging mode, build the static site or run tests.
 
 ### VSCode
 
@@ -48,3 +48,5 @@ for ext in "dbaeumer.vscode-eslint" "editorconfig.editorconfig"; do code --insta
 
 Or use VSCode's built in Recommended Extensions feature:
 [![VSCode workspace-recommended-extensions documentation](.vscode/extension-recommendations.png)](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
+
+You can use the included debug profile to run the development server in debugging mode.
