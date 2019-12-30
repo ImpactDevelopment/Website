@@ -13,7 +13,7 @@ export default function Polyfill(props: Props): JSX.Element | null {
 	return (
 		<script
 			crossOrigin="anonymous"
-			src={'https//polyfill.io/v3/polyfill.min.js?unknown=polyfill&flags=gated&features=' + props.features.join(comma)}
+			src={'https://polyfill.io/v3/polyfill.min.js?unknown=polyfill&flags=gated&features=' + props.features.join(comma)}
 		/>
 	)
 }
