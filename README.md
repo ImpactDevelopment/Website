@@ -16,6 +16,24 @@ This will first install all dependancies, then run a development server complete
 
 ## IDE setup
 
+### Atom
+
+- [linter](https://atom.io/packages/linter)
+- [linter-eslint](https://atom.io/packages/linter-eslint)
+- [editorconfig](https://atom.io/packages/editorconfig)
+
+You can install these by running `apm i linter linter-eslint editorconfig`
+
+### Intellij IDEA and WebStorm
+
+-   [ESLint](https://plugins.jetbrains.com/plugin/7494-eslint)
+-   [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig)
+
+You can use Intellij's Required Plugins feature:
+[![Intellij Required Plugins](.idea/required-plugins.png)](https://www.jetbrains.com/help/idea/managing-plugins.html#required-plugins)
+
+You can use the included Run Configurations to build the static site or run the development server.
+
 ### VSCode
 
 You'll want to install the following plugins in your workspace:
@@ -25,22 +43,8 @@ You'll want to install the following plugins in your workspace:
 
 ```sh
 # Bash one-liner
-for ext in "esbenp.prettier-vscode" "dbaeumer.vscode-eslint" "editorconfig.editorconfig"; do code --install-extension $ext; done
+for ext in "dbaeumer.vscode-eslint" "editorconfig.editorconfig"; do code --install-extension $ext; done
 ```
 
-Alternatively use the built in **Extensions: Show Recommended Extensions** feature:
-
-[![VSCode workspace-recommended-extensions documentation](https://code.visualstudio.com/assets/docs/editor/extension-gallery/recommendations.png)](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
-
-## Intellij IDEA and WebStorm
-
--   [ESLint](https://plugins.jetbrains.com/plugin/7494-eslint) (must be installed manually)
--   [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig) (default on Intellij & WebStorm)
-
-## Atom
-
-- [linter](https://atom.io/packages/linter)
-- [linter-eslint](https://atom.io/packages/linter-eslint)
-- [editorconfig](https://atom.io/packages/editorconfig)
-
-You can install these by running `apm i linter linter-eslint editorconfig`
+Or use VSCode's built in Recommended Extensions feature:
+[![VSCode workspace-recommended-extensions documentation](.vscode/extension-recommendations.png)](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
