@@ -19,7 +19,6 @@ This will first install all dependancies, then run a development server complete
 
 You'll want to install the following plugins in your workspace:
 
--   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 -   [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 -   [EditorConfig](https://marketplace.visualstudio.com/items?itemName=editorconfig.editorconfig)
 
@@ -34,6 +33,13 @@ Alternatively use the built in **Extensions: Show Recommended Extensions** featu
 
 ## Intellij IDEA and WebStorm
 
--   [Prettier](https://plugins.jetbrains.com/plugin/10456-prettier) (default on WebStorm)
 -   [ESLint](https://plugins.jetbrains.com/plugin/7494-eslint) (must be installed manually)
 -   [EditorConfig](https://plugins.jetbrains.com/plugin/7294-editorconfig) (default on Intellij & WebStorm)
+
+## Atom
+
+- [linter](https://atom.io/packages/linter)
+- [linter-eslint](https://atom.io/packages/linter-eslint)
+- [editorconfig](https://atom.io/packages/editorconfig)
+
+You can install these by running `apm i linter linter-eslint editorconfig`
