@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
+import NextLink from 'next/link'
 import MuiLink from '@material-ui/core/Link'
 
 import Staff from '../components/Staff'
@@ -11,7 +12,9 @@ export default function About(): JSX.Element {
 		<Layout>
 			<Container maxWidth="sm">
 				<Box my={4}>
-					<MuiLink href="/">Go to the main page</MuiLink>
+					<NextLink href="/" passHref>
+						<MuiLink>Go to the main page</MuiLink>
+					</NextLink>
 					<Staff />
 				</Box>
 			</Container>
