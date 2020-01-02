@@ -1,6 +1,7 @@
 # Impact website 2.0
 
 [![Build Status](https://travis-ci.com/ImpactDevelopment/Website.svg?branch=master)](https://travis-ci.com/ImpactDevelopment/Website)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dffc269ba97c4ceb943eb001fe882eab)](https://www.codacy.com/manual/LeafHacker/Website)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## How to use
