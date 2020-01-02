@@ -1,9 +1,10 @@
-import React from 'react'
 import Document, { Head, Main, NextScript, DocumentInitialProps, DocumentContext } from 'next/document'
 import { ServerStyleSheets } from '@material-ui/core/styles'
 import { RenderPageResult } from 'next/dist/next-server/lib/utils'
 
 import Polyfill from '../components/Polyfill'
+
+import React, { Children } from 'react'
 
 // _document is only rendered on the server side and not on the client side
 // Event handlers like onClick can't be added to this file
@@ -63,6 +64,6 @@ MyDocument.getInitialProps = async (ctx: DocumentContext): Promise<DocumentIniti
 	return {
 		...initialProps,
 		// Styles fragment is rendered after the app and page rendering finish.
-		styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
+		styles: [...Children.toArray(initialProps.styles), sheets.getStyleElement()],
 	}
 }

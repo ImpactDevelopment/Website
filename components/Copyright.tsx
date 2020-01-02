@@ -1,5 +1,6 @@
 import { Typography } from '@material-ui/core'
 import MuiLink from '@material-ui/core/Link'
+
 import React from 'react'
 
 export default function Copyright(): JSX.Element {

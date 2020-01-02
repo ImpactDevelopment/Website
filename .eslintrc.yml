@@ -29,6 +29,8 @@ rules:
   # Formatting
   # See also .prettierrc.yml and .editorconfig
   prettier/prettier: warn
+  import/first: warn
+  import/newline-after-import: warn
   import/order:
     - warn
     - newlines-between: always
@@ -40,11 +42,21 @@ rules:
         - index
   # Code quality
   '@typescript-eslint/no-non-null-assertion': off
+  import/no-unresolved: error
+  import/no-named-as-default-member: warn
+  import/default: off # does not interpret module.exports = ... as a default export, so React false-positives
+  import/group-exports: warn
+  import/prefer-default-export: warn
 
 settings:
   react:
     pragma: React
     version: detect
+  import/parsers:
+    '@typescript-eslint/parser': [.ts, .tsx]
+  import/resolver:
+    typescript:
+      alwaysTryTypes: true
 
 parser: '@typescript-eslint/parser'
 

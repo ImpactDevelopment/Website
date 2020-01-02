@@ -2,11 +2,12 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import { ThemeProvider } from '@material-ui/core/styles'
 import App from 'next/app'
 import Head from 'next/head'
-import React from 'react'
 import { PaletteType } from '@material-ui/core'
 
 import makeTheme from '../components/theme'
-import { AppContext } from '../components/AppContext'
+import AppContext from '../components/AppContext'
+
+import React from 'react'
 
 interface State {
 	themeType: PaletteType

@@ -1,11 +1,12 @@
 import { AppBar, Button, IconButton, makeStyles, Toolbar } from '@material-ui/core'
-import React, { useContext } from 'react'
 import NextLink from 'next/link'
 import { InvertColors } from '@material-ui/icons'
 import MuiLink from '@material-ui/core/Link'
 
 import ElevationScroll from './ElevationScroll'
-import { AppContext } from './AppContext'
+import AppContext from './AppContext'
+
+import React, { useContext } from 'react'
 
 interface Props {
 	title: string

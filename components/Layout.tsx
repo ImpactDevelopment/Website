@@ -1,11 +1,12 @@
 import { Fab } from '@material-ui/core'
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp'
 import Head from 'next/head'
-import React from 'react'
 
 import ScrollTop from './ScrollTop'
 import Copyright from './Copyright'
 import NavBar from './NavBar'
+
+import React from 'react'
 
 interface Props {
 	children: React.ReactElement

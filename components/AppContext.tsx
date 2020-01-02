@@ -1,4 +1,5 @@
 import { PaletteType } from '@material-ui/core'
+
 import { createContext } from 'react'
 
 interface AppContextStructure {
@@ -6,4 +7,6 @@ interface AppContextStructure {
 	setThemeType: (type: PaletteType) => void
 }
 
-export const AppContext = createContext<Partial<AppContextStructure>>({})
+const AppContext = createContext<Partial<AppContextStructure>>({})
+
+export default AppContext

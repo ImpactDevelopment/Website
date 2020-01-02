@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from '@material-ui/core/Container'
 import Box from '@material-ui/core/Box'
 import NextLink from 'next/link'
@@ -6,6 +5,8 @@ import MuiLink from '@material-ui/core/Link'
 
 import Staff from '../components/Staff'
 import Layout from '../components/Layout'
+
+import React from 'react'
 
 export default function About(): JSX.Element {
 	return (
