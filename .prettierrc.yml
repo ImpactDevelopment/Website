@@ -1,0 +1,6 @@
+# See also .eslintrc.yml and .editorconfig
+# Don't set useTabs or tabWidth so Prettier uses EditorConfig
+
+trailingComma: es5
+semi: false
+singleQuote: true

@@ -15,7 +15,8 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": "eslint --fix"
+		"*.{js,jsx,ts,tsx}": "eslint --fix",
+		"*.{json,md}": "prettier --write"
 	},
 	"dependencies": {
 		"@material-ui/core": "latest",

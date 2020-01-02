@@ -1,4 +1,4 @@
 {
-  "root": "out",
-  "clean_urls": true
+	"root": "out",
+	"clean_urls": true
 }

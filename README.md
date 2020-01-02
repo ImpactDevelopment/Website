@@ -19,9 +19,9 @@ This will first install all dependancies, then run a development server complete
 
 ### Atom
 
-- [linter](https://atom.io/packages/linter)
-- [linter-eslint](https://atom.io/packages/linter-eslint)
-- [editorconfig](https://atom.io/packages/editorconfig)
+-   [linter](https://atom.io/packages/linter)
+-   [linter-eslint](https://atom.io/packages/linter-eslint)
+-   [editorconfig](https://atom.io/packages/editorconfig)
 
 You can install these by running `apm i linter linter-eslint editorconfig`
 
