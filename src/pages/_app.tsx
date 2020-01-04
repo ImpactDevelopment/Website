@@ -4,7 +4,7 @@ import App from 'next/app'
 import Head from 'next/head'
 import { PaletteType } from '@material-ui/core'
 
-import makeTheme from '../components/theme'
+import makeTheme from '../theme'
 import AppContext from '../components/AppContext'
 
 import React from 'react'
