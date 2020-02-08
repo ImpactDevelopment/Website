@@ -34,6 +34,8 @@ export default class MyApp extends App {
 		if (jssStyles) {
 			jssStyles.parentElement!.removeChild(jssStyles)
 		}
+
+		// TODO load theme from cookie and prefers-color-scheme media query
 	}
 
 	render(): JSX.Element {
