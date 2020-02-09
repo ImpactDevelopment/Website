@@ -1,11 +1,10 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import useScrollTrigger from '@material-ui/core/useScrollTrigger'
-import Zoom from '@material-ui/core/Zoom'
+import { Fab, useScrollTrigger, Zoom } from '@material-ui/core'
 
 import React from 'react'
 
 interface Props {
-	children: React.ReactElement
+	children: JSX.Element
 }
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -19,15 +18,13 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 function handleClick(): void {
-	const first: Element | null = document.body.firstElementChild
+	const first = document.body.firstElementChild
 
-	if (first) {
-		first.scrollIntoView({
-			behavior: 'smooth',
-			block: 'start',
-			inline: 'start',
-		})
-	}
+	first?.scrollIntoView({
+		behavior: 'smooth',
+		block: 'start',
+		inline: 'start',
+	})
 }
 
 export default function ScrollTop({ children }: Props): JSX.Element {
@@ -40,7 +37,9 @@ export default function ScrollTop({ children }: Props): JSX.Element {
 	return (
 		<Zoom in={trigger}>
 			<div onClick={handleClick} role="presentation" className={classes.root}>
-				{children}
+				<Fab color="secondary" size="small" aria-label="scroll back to top">
+					{children}
+				</Fab>
 			</div>
 		</Zoom>
 	)

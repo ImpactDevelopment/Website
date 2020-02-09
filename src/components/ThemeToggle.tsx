@@ -5,7 +5,11 @@ import AppContext from './AppContext'
 
 import React, { useContext } from 'react'
 
-export default function NavBar(): JSX.Element {
+interface Props {
+	className?: string
+}
+
+export default function ThemeToggle({ className = '' }: Props): JSX.Element {
 	const { themeType, setThemeType } = useContext(AppContext)
 
 	const toggleTheme = (): void => {
@@ -18,7 +22,7 @@ export default function NavBar(): JSX.Element {
 	}
 
 	return (
-		<IconButton color="inherit" onClick={toggleTheme}>
+		<IconButton color="inherit" onClick={toggleTheme} className={className}>
 			{themeType === 'dark' ? <Brightness7 /> : <Brightness4 />}
 		</IconButton>
 	)
