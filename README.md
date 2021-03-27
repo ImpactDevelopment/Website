@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 
-This will first install all dependancies, then run a development server complete with auto-reload.
+This will first install all dependencies, then run a development server complete with auto-reload.
 
 ## IDE setup
 
